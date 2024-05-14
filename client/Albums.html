@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="online bookstore web design" />
+<script type="application/x-javascript"> </script>
+<!--fonts-->
+<link href='#css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href='#css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<!---->
+<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<!-- Scroll top -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--End  Scroll top -->
+ <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</head>
+<body>
+  <div class="container">
+		      <div class="top-nav">
+					    <ul>
+							<li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="Albums.html">Albums</a></li>
+							<li><a href="user.html">user</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<div class="clearfix"></div>
+						</ul>
+						<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+					</div>
+		 </div>
+	</div>
+
+
+	<div class = "sidebar">
+	<div class="category-list">
+		<h3>Category</h3>
+		
+		<ul class="category-product">
+
+				<li><a href="#">3 years old</a></li>
+				<li><a href="#">5 years old(5)</a></li>
+				<li><a href="#">7 years old</a></li>
+				<li><a href="#">family</a></li>
+				<li><a href="#">girls (20)</a></li>
+				<select id="sortSelect" class="sort-dropdown">
+					<option value="price">Sort by Price</option>
+					<option value="date">Sort by Date</option>
+			</select> 
+		</ul>
+</div>
+</div>
+
+
+
+	<!---->
+		<div class="container">
+		<div class="content">
+		<div class="content-top-grid">
+			<div class="search-sort">
+				<input type="text" id="searchInput" placeholder="Search by ...">
+				<button class="hvr-sweep-to-right" class = "searchbar"onclick="searchFunction()">Search</button>				
+		</div>
+		
+		</div>			
+				<div class="content-top-in">
+					<div class="col-md-4 grid">
+						<a href="leo's dream.html" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Leo's dream.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Leo's dream</a></h4>
+							<p>Leo discovers a hidden realm in his dreams, filled with fantastical creatures . Each night, as Leo falls asleep, he is transported to this enchanted world, embarking on extraordinary adventures that challenge his courage and wisdom.</p>
+						<a href="leo's dream.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+	
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/Bella.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Bella.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Bella</a></h4>
+							<p>A young caterpillar Living in the lush gardens of Evergreen Meadow. Unlike other caterpillars, Bella dreams of soaring high above the meadows, yearning for the day she can flutter freely like the butterflies she admires.</p>
+							<a href="bella.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/the Friendly Fish.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/the Friendly Fish.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">The Friendly Fish</a></h4>
+							<p> Cheerful and sociable fish who loves making friends in the vast ocean. Set in the colorful Coral Cove, the story follows Finley's journey as he meets various sea creatures, from shy seahorses to playful dolphins.</p>
+							<a href="fish.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+
+					<div class="col-md-4 grid">
+						<a href="leo's dream.html" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Leo's dream.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Leo's dream</a></h4>
+							<p>Leo discovers a hidden realm in his dreams, filled with fantastical creatures . Each night, as Leo falls asleep, he is transported to this enchanted world, embarking on extraordinary adventures that challenge his courage and wisdom.</p>
+						<a href="leo's dream.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+	
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/Bella.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Bella.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Bella</a></h4>
+							<p>A young caterpillar Living in the lush gardens of Evergreen Meadow. Unlike other caterpillars, Bella dreams of soaring high above the meadows, yearning for the day she can flutter freely like the butterflies she admires.</p>
+							<a href="bella.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/the Friendly Fish.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/the Friendly Fish.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">The Friendly Fish</a></h4>
+							<p> Cheerful and sociable fish who loves making friends in the vast ocean. Set in the colorful Coral Cove, the story follows Finley's journey as he meets various sea creatures, from shy seahorses to playful dolphins.</p>
+							<a href="fish.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+        
+					<div class="col-md-4 grid">
+						<a href="leo's dream.html" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Leo's dream.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Leo's dream</a></h4>
+							<p>Leo discovers a hidden realm in his dreams, filled with fantastical creatures . Each night, as Leo falls asleep, he is transported to this enchanted world, embarking on extraordinary adventures that challenge his courage and wisdom.</p>
+						<a href="leo's dream.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+	
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/Bella.png" class="b-link-stripe b-animate-go  thickbox swipebstart readox"><img class="img-responsive" src="images/Bella.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Bella</a></h4>
+							<p>A young caterpillar Living in the lush gardens of Evergreen Meadow. Unlike other caterpillars, Bella dreams of soaring high above the meadows, yearning for the day she can flutter freely like the butterflies she admires.</p>
+							<a href="bella.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/the Friendly Fish.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/the Friendly Fish.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">The Friendly Fish</a></h4>
+							<p> Cheerful and sociable fish who loves making friends in the vast ocean. Set in the colorful Coral Cove, the story follows Finley's journey as he meets various sea creatures, from shy seahorses to playful dolphins.</p>
+							<a href="fish.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+
+					<div class="col-md-4 grid">
+						<a href="leo's dream.html" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Leo's dream.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Leo's dream</a></h4>
+							<p>Leo discovers a hidden realm in his dreams, filled with fantastical creatures . Each night, as Leo falls asleep, he is transported to this enchanted world, embarking on extraordinary adventures that challenge his courage and wisdom.</p>
+						<a href="leo's dream.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+	
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/Bella.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/Bella.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">Bella</a></h4>
+							<p>A young caterpillar Living in the lush gardens of Evergreen Meadow. Unlike other caterpillars, Bella dreams of soaring high above the meadows, yearning for the day she can flutter freely like the butterflies she admires.</p>
+							<a href="bella.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+					<div class="col-md-4 grid">
+						<a href="images/the Friendly Fish.png" class="b-link-stripe b-animate-go  thickbox swipebox"><img class="img-responsive" src="images/the Friendly Fish.png" alt=""/></a>
+						<div class="simply" >
+							<h4><a href="#">The Friendly Fish</a></h4>
+							<p> Cheerful and sociable fish who loves making friends in the vast ocean. Set in the colorful Coral Cove, the story follows Finley's journey as he meets various sea creatures, from shy seahorses to playful dolphins.</p>
+							<a href="fish.html" class="hvr-sweep-to-right">start read</a> 
+						</div>
+					</div>
+				
+				<div class="clearfix"></div>
+			</div>
+			</div>

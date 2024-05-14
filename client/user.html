@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>user-profile</title>
+<!-- Include the Auth0 SDK -->
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="online bookstore web design" />
+<script type="application/x-javascript"> </script>
+<!--fonts-->
+<link href='#css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href='#css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<!---->
+<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen" />
+
+ <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <span class="menu"><img src="" alt=""> </span>
+
+              <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                                              <li><a href="Albums.html">Albums</a></li>
+                <li><a href="user.html">user</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <div class="clearfix"></div>
+              </ul>
+                      <script>
+                      $("span.menu").click(function(){
+                          $(".top-nav ul").slideToggle(500, function(){
+                          });
+                      });
+                  </script>
+
+</div>
+<div class="social-icons">						
+        <ul class="social">
+            <li><a  href="#" ><i> </i> </a></li>
+            <li><a  href="#" ><i  class="rss"></i></a></li>
+            <li><a  href="#" ><i class="twitter"></i></a></li>
+            <li><a href="#"><i class="dribble"></i></a></li>
+            <div class="clearfix"></div>
+        </ul>
+     </div>
+     <div class="clearfix"></div>
+</div>
+
+<!-- User detail Section -->
+<div id="user-profile">
+    <h3>User Profile</h3>
+    <p><strong>Email:</strong> <span id="user-email"></span></p>
+    <p><strong>Name:</strong> <span id="user-name"></span></p>
+</div>
+
+<!-- Logout Button -->
+<button id="logout-button">Log Out</button>
+
+
+<!-- Recent Comments Section -->
+<div class="container">
+<div class="comments-section">
+<div class="blog_grid ">
+    <h3 >my recent comments></h3>
+<div class="col-md-6 blog_box">
+ <h3><a href="leo's dream.html" class="comments">leo's dream</a></h3>
+ <div class="links">
+      <ul>
+          <li> </i><span>Feb 14, 2015</span></li>
+          <li> </i><span><a href="#">Admin</span></a></li>
+          <li> </i><a href="leo's dream.html"><span>No Comments</span></a></li>
+      </ul>
+  </div>
+ <p> The story beautifully blends fantasy with reality, as Leo discovers a hidden realm each night in his dreams. Filled with fantastical creatures and extraordinary adventures, this story not only entertains but also inspires courage and imagination. </p>
+<a class="hvr-sweep-to-right" class= "comments-delect"href="leo's dream.html">delect</a>
+<a class="hvr-sweep-to-right" class= "comments-add"href="leo's dream.html">edit comment</a>
+</div>  
+
+<div class="col-md-6 blog_box">
+ <h3><a href="fish.html">A friendly Fish</a></h3>
+ <div class="links">
+      <ul>
+          <li> </i><span>Feb 14, 2015</span></li>
+          <li> </i><span><a href="#">Admin</span></a></li>
+          <li> </i><a href="fish.html"><span>No Comments</span></a></li>
+      </ul>
+  </div>
+ <p>this narrative is a delightful exploration of hope, transformation, and self-discovery. Bella's yearning to spread her wings and embrace her true potential resonates with readers of all ages, teaching the valuable lesson that dreams can indeed come true.</p>
+<a class="hvr-sweep-to-right" class= "comments-delect" href="fish.html">delect</a>
+<a class="hvr-sweep-to-right" class= "comments-add" href="fish.html">edit comment</a>
+</div>  
+
+
+<div class="col-md-6 blog_box">
+    <h3><a href="bella.html">bella</a></h3>
+    <div class="links">
+         <ul>
+             <li> </i><span>Feb 14, 2015</span></li>
+             <li> </i><span><a href="#">Admin</span></a></li>
+             <li> </i><a href="bella.html"><span>No Comments</span></a></li>
+         </ul>
+     </div>
+    <p>this narrative is a delightful exploration of hope, transformation, and self-discovery. Bella's yearning to spread her wings and embrace her true potential resonates with readers of all ages, teaching the valuable lesson that dreams can indeed come true.</p>
+   <a class="hvr-sweep-to-right" class= "comments-delect" href="bella">delect</a>
+   <a class="hvr-sweep-to-right" class= "comments-delect" href="bella">edit comment</a>
+   </div>  
+
+
+<div class="col-md-6 blog_box">
+ <h3><a href="bella.html">bella</a></h3>
+ <div class="links">
+      <ul>
+          <li> </i><span>Feb 14, 2015</span></li>
+          <li> </i><span><a href="#">Admin</span></a></li>
+          <li> </i><a href="bella.html"><span>No Comments</span></a></li>
+      </ul>
+  </div>
+ <p>this narrative is a delightful exploration of hope, transformation, and self-discovery. Bella's yearning to spread her wings and embrace her true potential resonates with readers of all ages, teaching the valuable lesson that dreams can indeed come true.</p>
+<a class="hvr-sweep-to-right" class= "comments-delect" href="bella">delect</a>
+<a class="hvr-sweep-to-right" class= "comments-delect" href="bella">add comment</a>
+</div>  
+<div class="clearfix"> </div>
+
+
+<!-- Custom script -->
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const auth0 = await createAuth0Client({
+            domain: 'dev-kuqyvtmll4neav1r.us.auth0.com',
+            client_id: 'HrdmVyQECTrP8Hy92golHqnoRy3mIIfA',
+            redirect_uri: 'http://localhost:3000/user.html'
+        });
+
+        // Handle the authentication response from Auth0
+        if (window.location.search.includes('code=')) {
+            await auth0.handleRedirectCallback();
+            window.history.replaceState({}, document.title, "/user.html"); 
+        }
+
+        // Check if user is authenticated
+        const isAuthenticated = await auth0.isAuthenticated();
+        if (isAuthenticated) {
+            // User is authenticated
+            const user = await auth0.getUser();
+            // Store user ID
+            sessionStorage.setItem('userId', user.sub); 
+            console.log("User details: ", user);
+
+            // Save or update the user in the database
+            fetch('http://localhost:3000/api/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${accessToken}` 
+                },
+                body: JSON.stringify({
+                    email: user.email,
+                    name: user.name
+                })
+            })
+            .then(response => response.json())
+            .then(savedUser => console.log('User saved/updated:', savedUser))
+            .catch(error => console.error('Error saving/updating user:', error));
+            
+            // Update UI with user details
+            document.getElementById('user-email').textContent = user.email;
+            document.getElementById('user-name').textContent = user.name;
+
+        // Logout Functionality
+        document.getElementById('logout-button').addEventListener('click', () => {
+            auth0.logout({
+                returnTo: window.location.origin
+            });
+        });
+
+        } else {
+            // User is not authenticated, trigger login
+            auth0.loginWithRedirect();
+        }
+    });
+</script>
+
+</body>
+</html>

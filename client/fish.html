@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/story-content.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+    <!-- Include the Auth0 SDK -->
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Header Section -->    
+    <header>
+        <div class="contentheader">  
+            <div class = "header-top">
+                <p> Hello! 👋🏾  I am  Friendly Fish</p>
+                <img class="header-background" src="client/images/hollowan.png " alt=""/>
+            </div>
+            <div class="header-bottom">
+                <div class="top-nav">
+                          <ul>
+                              <li class="active"><a href="index.html">Home</a></li>
+                              <li><a href="Albums.html">Albums</a></li>
+                              <li><a href="user.html">user</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                              <div class="clearfix"></div>
+                          </ul>
+                          <script>
+                          $("span.menu").click(function(){
+                              $(".top-nav ul").slideToggle(500, function(){
+                              });
+                          });
+                      </script>
+                      </div>
+           </div>
+    </header>
+
+    <!-- chapter Section -->    
+    <div class="container">
+		<div class="content-top-grid">
+    <div id="banner">
+        <div class="img-list img-wrapper">
+            <div class="img-box">
+                <div class="info">
+                    <h3>chapter1:The Enchanted Forest</h3>
+                </div>
+                <img src="images/the Friendly Fish.png"alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>chapter2:The Discovery of Eldoria</h3>
+                </div>
+                <img src="images/the Friendly Fish.png" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>chapter3:Whispers of the Trees</h3>
+                </div>
+                <img src="images/the Friendly Fish.png" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>chapter4:The River of Secrets</h3>
+                </div>
+                <img src="images/the Friendly Fish.png" alt="">
+            </div>
+            <div class="img-box">
+                <div class="info">
+                    <h3>chapter5:The Cave of Echoes</h3>
+                </div>
+                <img src="images/the Friendly Fish.png" alt="">
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <h3>chapter6:The Spirit's Guidance</h3>
+                </div>
+                <img src="images/the Friendly Fish.png" alt="">
+            </div>
+        </div>       
+    </div>
+    </section>
+
+    <div class="btn-group">
+        <button class="last btn">
+            <svg t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+        <button class="next btn">
+            <svg t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+                <path
+                    d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+                    fill="" p-id="2374"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+
+
+    <!-- User Comments Section -->
+    <div class="content-bottom">
+        <div class="col-md-4 sap">
+            <div class="user-comments">
+                <!-- Dynamic list for comments -->
+                <ul class="comment-list">
+                    <!-- Comments will be dynamically added here by JavaScript -->
+                </ul>
+    
+                <div class="comment-form">
+                    <div class="col-md-6 contact-grid">
+                        <h4>write you comment</h4>
+                        <form>
+                            <input type="text" id="commentText" class="comment-input" placeholder="Write your comment here">
+                            <input type="hidden" id="editCommentId">
+                            <button type="submit" id="submitComment">Submit Comment</button>
+                        </form>
+                    </div>    
+            </div>
+        </div>
+    </div>
+    
+    <script src="content-rotate.js"></script>
+    <script src="user-comment.js"></script>   
+</body>
+
+</html>
